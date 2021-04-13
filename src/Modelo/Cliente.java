@@ -9,6 +9,6 @@ package Modelo;
  *
  * @author daw-B
  */
-public class Modelo {
+public class Cliente {
     
 }
