@@ -5,6 +5,7 @@
  */
 package Vista;
 
+import Modelo.Cliente;
 import static java.lang.System.exit;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
@@ -47,19 +48,11 @@ public class Inicio extends javax.swing.JFrame {
         jRadioButtonMujer = new javax.swing.JRadioButton();
         jLabelEdad = new javax.swing.JLabel();
         jTextFieldEdad = new javax.swing.JTextField();
-        jLabelObligatorio1 = new javax.swing.JLabel();
-        jLabelObligatorio2 = new javax.swing.JLabel();
-        jLabelObligatorio3 = new javax.swing.JLabel();
-        jLabelObligatorio4 = new javax.swing.JLabel();
-        jLabelObligatorio5 = new javax.swing.JLabel();
-        jLabelObligatorio6 = new javax.swing.JLabel();
-        jLabelObligatorio7 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextAreaDatosGuardados = new javax.swing.JTextArea();
         jButtonGuardar = new javax.swing.JButton();
         jButtonSalir = new javax.swing.JButton();
-        jLabelAsterisco = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -85,20 +78,6 @@ public class Inicio extends javax.swing.JFrame {
 
         jLabelEdad.setText("Edad:");
 
-        jLabelObligatorio1.setText("*");
-
-        jLabelObligatorio2.setText("*");
-
-        jLabelObligatorio3.setText("*");
-
-        jLabelObligatorio4.setText("*");
-
-        jLabelObligatorio5.setText("*");
-
-        jLabelObligatorio6.setText("*");
-
-        jLabelObligatorio7.setText("*");
-
         javax.swing.GroupLayout jPanelDatosPersonalesLayout = new javax.swing.GroupLayout(jPanelDatosPersonales);
         jPanelDatosPersonales.setLayout(jPanelDatosPersonalesLayout);
         jPanelDatosPersonalesLayout.setHorizontalGroup(
@@ -111,17 +90,8 @@ public class Inicio extends javax.swing.JFrame {
                     .addComponent(jLabelEstadoCivil, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabelApellido, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabelSegundoApellido, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-                    .addComponent(jLabelNombre))
-                .addGap(43, 43, 43)
-                .addGroup(jPanelDatosPersonalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanelDatosPersonalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabelObligatorio1)
-                        .addComponent(jLabelObligatorio2))
-                    .addComponent(jLabelObligatorio4)
-                    .addComponent(jLabelObligatorio5)
-                    .addComponent(jLabelObligatorio3)
-                    .addComponent(jLabelObligatorio7))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(jLabelNombre, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(61, 61, 61)
                 .addGroup(jPanelDatosPersonalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanelDatosPersonalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(jTextFieldSegundoApellido)
@@ -133,66 +103,37 @@ public class Inicio extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jRadioButtonMujer))
                     .addComponent(jTextFieldEdad, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanelDatosPersonalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanelDatosPersonalesLayout.createSequentialGroup()
-                    .addGap(225, 225, 225)
-                    .addComponent(jLabelObligatorio6)
-                    .addContainerGap(247, Short.MAX_VALUE)))
+                .addContainerGap(74, Short.MAX_VALUE))
         );
         jPanelDatosPersonalesLayout.setVerticalGroup(
             jPanelDatosPersonalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelDatosPersonalesLayout.createSequentialGroup()
-                .addGroup(jPanelDatosPersonalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanelDatosPersonalesLayout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addComponent(jLabelNombre, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
-                    .addGroup(jPanelDatosPersonalesLayout.createSequentialGroup()
-                        .addGap(13, 13, 13)
-                        .addGroup(jPanelDatosPersonalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabelObligatorio1)
-                            .addComponent(jTextFieldNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(15, 15, 15)))
-                .addGroup(jPanelDatosPersonalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanelDatosPersonalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jTextFieldApellido, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabelApellido, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(jLabelObligatorio2))
+                .addContainerGap()
+                .addGroup(jPanelDatosPersonalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFieldNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanelDatosPersonalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFieldApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanelDatosPersonalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelSegundoApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFieldSegundoApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanelDatosPersonalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelEstadoCivil, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBoxEstadoCivil, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanelDatosPersonalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanelDatosPersonalesLayout.createSequentialGroup()
-                        .addGroup(jPanelDatosPersonalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextFieldSegundoApellido, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-                            .addComponent(jLabelSegundoApellido, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanelDatosPersonalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabelEstadoCivil, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBoxEstadoCivil, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabelObligatorio5)))
-                    .addComponent(jLabelObligatorio4))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanelDatosPersonalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanelDatosPersonalesLayout.createSequentialGroup()
-                        .addGroup(jPanelDatosPersonalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabelSexo, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jRadioButtonHombre)
-                            .addComponent(jRadioButtonMujer))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanelDatosPersonalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabelEdad, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
-                            .addComponent(jTextFieldEdad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanelDatosPersonalesLayout.createSequentialGroup()
-                        .addComponent(jLabelObligatorio3)
-                        .addGap(26, 26, 26)
-                        .addComponent(jLabelObligatorio7)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addGroup(jPanelDatosPersonalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelSexo, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jRadioButtonHombre)
+                    .addComponent(jRadioButtonMujer))
+                .addGap(18, 18, 18)
+                .addGroup(jPanelDatosPersonalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelEdad, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE)
+                    .addComponent(jTextFieldEdad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
-            .addGroup(jPanelDatosPersonalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanelDatosPersonalesLayout.createSequentialGroup()
-                    .addGap(71, 71, 71)
-                    .addComponent(jLabelObligatorio6)
-                    .addContainerGap(193, Short.MAX_VALUE)))
         );
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Datos guardados", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 3, 12), new java.awt.Color(1, 1, 1))); // NOI18N
@@ -228,8 +169,6 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
 
-        jLabelAsterisco.setText("* Campos obligatorios");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -239,8 +178,7 @@ public class Inicio extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabelAsterisco, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
+                        .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jButtonGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jButtonSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -252,14 +190,10 @@ public class Inicio extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanelDatosPersonales, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButtonGuardar)
-                            .addComponent(jButtonSalir)))
-                    .addComponent(jLabelAsterisco, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButtonGuardar)
+                    .addComponent(jButtonSalir))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -285,17 +219,24 @@ public class Inicio extends javax.swing.JFrame {
             }else{
                 sexo = "Mujer";
             }
-        
-            vDatos.add(nombre);
+            Cliente c = new Cliente(nombre, apellido, segundoapellido, estadocivil, sexo, edad);
+            vDatos.add(c);
+            
+            /*vDatos.add(nombre);
             vDatos.add(apellido);
             vDatos.add(segundoapellido);
             vDatos.add(estadocivil);
             vDatos.add(sexo);
             vDatos.add(edad);
-        
-            JOptionPane.showMessageDialog(rootPane, "Datos " + nombre + " " + apellido + " " + segundoapellido + " " + estadocivil + " " + sexo + " " + edad + " guardados correctamente");
+            */
+            if (nombre.isEmpty() || apellido.isEmpty() || segundoapellido.isEmpty() || sexo.isEmpty() || edad.isEmpty()) {
+                JOptionPane.showMessageDialog(rootPane, "Todos los campos son obligatorios", "Error", 0);
+            }else{
+                JOptionPane.showMessageDialog(rootPane, "Datos " + nombre + " " + apellido + " " + segundoapellido + " " + estadocivil + " " + sexo + " " + edad + " guardados correctamente");
+                jTextAreaDatosGuardados.setText(c.toString() + "\n");
+            //jTextAreaDatosGuardados.setText(jTextAreaDatosGuardados.getText() + nombre + ", " + apellido + ", " + segundoapellido + ", " + estadocivil + ", " + sexo + ", " + edad + "\n");
             
-            jTextAreaDatosGuardados.setText(nombre + ", " + apellido + ", " + segundoapellido + ", " + estadocivil + ", " + sexo + " " + edad);
+            }
             
         }
       
@@ -337,24 +278,16 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
     }
-    private ArrayList<String> vDatos;
+    private ArrayList<Cliente> vDatos;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroupSexo;
     private javax.swing.JButton jButtonGuardar;
     private javax.swing.JButton jButtonSalir;
     private javax.swing.JComboBox<String> jComboBoxEstadoCivil;
     private javax.swing.JLabel jLabelApellido;
-    private javax.swing.JLabel jLabelAsterisco;
     private javax.swing.JLabel jLabelEdad;
     private javax.swing.JLabel jLabelEstadoCivil;
     private javax.swing.JLabel jLabelNombre;
-    private javax.swing.JLabel jLabelObligatorio1;
-    private javax.swing.JLabel jLabelObligatorio2;
-    private javax.swing.JLabel jLabelObligatorio3;
-    private javax.swing.JLabel jLabelObligatorio4;
-    private javax.swing.JLabel jLabelObligatorio5;
-    private javax.swing.JLabel jLabelObligatorio6;
-    private javax.swing.JLabel jLabelObligatorio7;
     private javax.swing.JLabel jLabelSegundoApellido;
     private javax.swing.JLabel jLabelSexo;
     private javax.swing.JPanel jPanel2;
