@@ -30,14 +30,15 @@
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jPanelDatosPersonales" max="32767" attributes="0"/>
                   <Component id="jPanel2" max="32767" attributes="0"/>
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="jLabelAsterisco" min="-2" pref="170" max="-2" attributes="0"/>
+                      <EmptySpace pref="53" max="32767" attributes="0"/>
                       <Component id="jButtonGuardar" min="-2" pref="128" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="jButtonSalir" min="-2" pref="125" max="-2" attributes="0"/>
                   </Group>
+                  <Component id="jPanelDatosPersonales" alignment="0" max="32767" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -48,10 +49,16 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jPanelDatosPersonales" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButtonGuardar" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButtonSalir" alignment="3" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jButtonGuardar" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButtonSalir" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Component id="jLabelAsterisco" max="32767" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
@@ -76,15 +83,26 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
+              <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                      <Component id="jLabelEdad" max="32767" attributes="0"/>
-                      <Component id="jLabelSexo" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="jLabelEdad" alignment="1" max="32767" attributes="0"/>
+                      <Component id="jLabelSexo" alignment="1" max="32767" attributes="0"/>
                       <Component id="jLabelEstadoCivil" alignment="0" max="32767" attributes="0"/>
-                      <Component id="jLabelNombre" alignment="0" max="32767" attributes="0"/>
                       <Component id="jLabelApellido" alignment="1" max="32767" attributes="0"/>
                       <Component id="jLabelSegundoApellido" alignment="0" pref="120" max="32767" attributes="0"/>
+                      <Component id="jLabelNombre" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabelObligatorio1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelObligatorio2" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="jLabelObligatorio4" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabelObligatorio5" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabelObligatorio3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabelObligatorio7" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
@@ -92,56 +110,96 @@
                           <Component id="jTextFieldSegundoApellido" max="32767" attributes="0"/>
                           <Component id="jTextFieldApellido" pref="211" max="32767" attributes="0"/>
                           <Component id="jTextFieldNombre" pref="211" max="32767" attributes="0"/>
-                          <Component id="jComboBox1" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jComboBoxEstadoCivil" alignment="0" max="32767" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jRadioButtonHombre" min="-2" max="-2" attributes="0"/>
-                              <Component id="jSpinner1" min="-2" pref="55" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="jRadioButtonHombre" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="jRadioButtonMujer" min="-2" max="-2" attributes="0"/>
                       </Group>
+                      <Component id="jTextFieldEdad" alignment="0" min="-2" pref="37" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="123" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+              <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="225" max="-2" attributes="0"/>
+                      <Component id="jLabelObligatorio6" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="247" max="32767" attributes="0"/>
+                  </Group>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="jTextFieldNombre" pref="32" max="32767" attributes="0"/>
-                      <Component id="jLabelNombre" max="32767" attributes="0"/>
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="jLabelNombre" pref="36" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabelObligatorio1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jTextFieldNombre" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="jTextFieldApellido" alignment="1" pref="32" max="32767" attributes="0"/>
-                      <Component id="jLabelApellido" alignment="1" max="32767" attributes="0"/>
-                  </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="jTextFieldSegundoApellido" pref="30" max="32767" attributes="0"/>
-                      <Component id="jLabelSegundoApellido" max="32767" attributes="0"/>
-                  </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabelEstadoCivil" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                      <Component id="jComboBox1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabelSexo" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                      <Component id="jRadioButtonHombre" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jRadioButtonMujer" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="jTextFieldApellido" alignment="1" min="-2" pref="32" max="-2" attributes="0"/>
+                          <Component id="jLabelApellido" alignment="1" max="32767" attributes="0"/>
+                      </Group>
+                      <Component id="jLabelObligatorio2" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabelEdad" alignment="3" pref="32" max="32767" attributes="0"/>
-                      <Component id="jSpinner1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="jTextFieldSegundoApellido" pref="30" max="32767" attributes="0"/>
+                              <Component id="jLabelSegundoApellido" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabelEstadoCivil" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                              <Component id="jComboBoxEstadoCivil" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelObligatorio5" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Component id="jLabelObligatorio4" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabelSexo" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                              <Component id="jRadioButtonHombre" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jRadioButtonMujer" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabelEdad" alignment="3" pref="32" max="32767" attributes="0"/>
+                              <Component id="jTextFieldEdad" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="jLabelObligatorio3" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                          <Component id="jLabelObligatorio7" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
+              </Group>
+              <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
+                      <Component id="jLabelObligatorio6" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="193" max="32767" attributes="0"/>
+                  </Group>
               </Group>
           </Group>
         </DimensionLayout>
@@ -173,7 +231,7 @@
             <Property name="text" type="java.lang.String" value="Estado civil:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JComboBox" name="jComboBox1">
+        <Component class="javax.swing.JComboBox" name="jComboBoxEstadoCivil">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="4">
@@ -214,7 +272,42 @@
             <Property name="text" type="java.lang.String" value="Edad:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JSpinner" name="jSpinner1">
+        <Component class="javax.swing.JTextField" name="jTextFieldEdad">
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabelObligatorio1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="*"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabelObligatorio2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="*"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabelObligatorio3">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="*"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabelObligatorio4">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="*"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabelObligatorio5">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="*"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabelObligatorio6">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="*"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabelObligatorio7">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="*"/>
+          </Properties>
         </Component>
       </SubComponents>
     </Container>
@@ -253,7 +346,7 @@
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
           <SubComponents>
-            <Component class="javax.swing.JTextArea" name="jTextArea1">
+            <Component class="javax.swing.JTextArea" name="jTextAreaDatosGuardados">
               <Properties>
                 <Property name="columns" type="int" value="20"/>
                 <Property name="rows" type="int" value="5"/>
@@ -268,12 +361,20 @@
         <Property name="text" type="java.lang.String" value="Guardar"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGuardarActionPerformed"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButtonGuardarMouseClicked"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButtonSalir">
       <Properties>
         <Property name="text" type="java.lang.String" value="Salir"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButtonSalirMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabelAsterisco">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="* Campos obligatorios"/>
       </Properties>
     </Component>
   </SubComponents>
