@@ -8,6 +8,7 @@ package Vista;
 import Modelo.Cliente;
 import static java.lang.System.exit;
 import java.util.ArrayList;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 /**
@@ -22,6 +23,7 @@ public class Inicio extends javax.swing.JFrame {
     public Inicio() {
         initComponents();
         vDatos = new ArrayList();
+        setIconImage(new ImageIcon(getClass().getResource("/Imagenes/escudo_real.png")).getImage());
     }
 
     /**
@@ -233,7 +235,7 @@ public class Inicio extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(rootPane, "Todos los campos son obligatorios", "Error", 0);
             }else{
                 JOptionPane.showMessageDialog(rootPane, "Datos " + nombre + " " + apellido + " " + segundoapellido + " " + estadocivil + " " + sexo + " " + edad + " guardados correctamente");
-                jTextAreaDatosGuardados.setText(c.toString() + "\n");
+                jTextAreaDatosGuardados.setText(vDatos.toString());
             //jTextAreaDatosGuardados.setText(jTextAreaDatosGuardados.getText() + nombre + ", " + apellido + ", " + segundoapellido + ", " + estadocivil + ", " + sexo + ", " + edad + "\n");
             
             }
